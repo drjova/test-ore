@@ -19,6 +19,35 @@
 
   <style>
     /* CSS from index.css and App.css */
+    /* Custom Fonts */
+    @font-face {
+      font-family: 'Söhne';
+      src: url('fonts/WOFF2/soehne-buch.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Söhne';
+      src: url('fonts/WOFF2/soehne-halbfett.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Tiempos Headline';
+      src: url('fonts/WOFF2/tiempos-headline-light.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ITC Avant Garde Gothic';
+      src: url('fonts/ITC Avant Garde Gothic Pro Medium/ITCAvantGardePro-Md.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
     :root {
       /* Colors */
       --color-helvetia-blue: #003366;
@@ -39,9 +68,9 @@
       --color-mosaic-art: #4527a0;
 
       /* Typography */
-      --font-serif: 'Playfair Display', serif;
-      --font-sans: 'Inter', sans-serif;
-      --font-brand: 'Questrial', sans-serif;
+      --font-serif: 'Tiempos Headline', 'Playfair Display', serif;
+      --font-sans: 'Söhne', 'Inter', sans-serif;
+      --font-brand: 'ITC Avant Garde Gothic', 'Questrial', sans-serif;
     }
 
     * {
