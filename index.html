@@ -684,7 +684,7 @@
     <section class="contact-section">
       <div class="container contact-container">
         <h2>Contact Us</h2>
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+        <form class="contact-form" onsubmit="handleContactSubmit(event)">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your name" required />
@@ -760,6 +760,19 @@
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
+    }
+
+    // Contact Form Handler
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const subject = encodeURIComponent("Contact from ORE Website: " + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      window.location.href = `mailto:?subject=${subject}&body=${body}`;
     }
   </script>
 </body>
