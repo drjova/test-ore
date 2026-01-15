@@ -427,7 +427,7 @@
     .footer-logo {
       /* height: 60px; */
       max-width: 600px;
-      object-fit: cover;
+      object-fit: fill;
       opacity: 0.8;
       transition: opacity 0.3s;
     }
@@ -763,7 +763,7 @@
       const subject = encodeURIComponent("Contact from ORE Website: " + name);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
-      window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:ore.contact@cern.ch?subject=${subject}&body=${body}`;
     }
   </script>
 </body>
