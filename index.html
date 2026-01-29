@@ -384,7 +384,7 @@
 
     /* Partners Section (Small variant) */
     .partners-section {
-      padding: 3rem 0;
+      padding: 4rem 0;
       background-color: #f9f9f9;
       border-top: 1px solid var(--color-border);
     }
@@ -393,7 +393,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 2rem;
+      gap: 3rem;
     }
 
     .partners-content {
@@ -404,24 +404,28 @@
 
     .partners-content h3 {
       font-family: var(--font-serif);
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: var(--color-helvetia-blue);
       margin: 0;
+      font-weight: 500;
     }
 
     .partners-links {
       display: flex;
-      gap: 2rem;
+      gap: 3rem;
       align-items: center;
+      justify-content: flex-start;
     }
 
     .logo-item-small {
-      height: 35px;
-      max-width: 120px;
+      height: 50px;
+      width: auto;
+      max-width: 160px;
       object-fit: contain;
       filter: grayscale(100%);
-      opacity: 0.6;
+      opacity: 0.7;
       transition: all 0.3s;
+      flex-shrink: 0;
     }
 
     .logo-item-small:hover {
@@ -432,23 +436,26 @@
     .powered-by-cern {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      padding-left: 2rem;
+      gap: 1.5rem;
+      padding-left: 3rem;
       border-left: 1px solid var(--color-border);
+      flex-shrink: 0;
     }
 
     .cern-logo-tiny {
-      height: 24px;
+      height: 45px;
+      width: auto;
       opacity: 1;
+      display: block;
     }
 
     .powered-by-text {
       font-family: var(--font-brand);
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--color-helvetia-blue);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
     }
 
     .contact-form {
